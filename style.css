@@ -1,0 +1,112 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+}
+
+.random {
+    padding-top: 80px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+    width: 100%;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 8px;
+}
+
+.color_box {
+    margin: 20px;
+    margin-left: 47px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(8, 8, 8);
+    border-radius: 10px;
+    transition: 0.2s linear;
+}
+
+.color_code {
+    width: 300px;
+    height: 50px;
+    margin-left: 47px;
+    background-color: wheat;
+    border-radius: 6px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 2em;
+}
+
+.btn {
+    width: 300px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: rgb(171, 167, 159);
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main {
+        background-color: rgb(75, 74, 74);
+    }
+    .random {
+        font-size: 1.5rem;
+    }
+    .content {
+        background-color: white;
+        box-shadow: none;
+        border-radius: 5px;
+        width: 300px;
+        height: 400px;
+    }
+    .color_box {
+        margin-left: 17px;
+        width: 260px;
+    }
+    .color_code {
+        margin-left: 17px;
+        width: 255px;
+    }
+    .btn {
+        width: 255px;
+        padding: 8px;
+        font-size: 1.3em;
+        margin-right: 10px;
+    }
+}
